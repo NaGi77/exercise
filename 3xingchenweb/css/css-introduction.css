@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+
+.bg{
+	width: 90%;
+	padding-bottom:5%; 
+	padding-top:5%;
+	padding-left :10%;
+	background:url(http://selfintro-xinchen.stor.sinaapp.com/bgbg.jpg) ;
+}
+
+.table{
+	width: 70%;
+	position: absolute;
+	left: 15%;
+	top:150px;
+	opacity: 1;
+	z-index: 99;
+	margin-bottom: 5%;
+	box-shadow: 0px 0px 15px white;
+} 
+.table-bg{
+	position: absolute;
+	left: 15%;
+	top:150px;
+	background: #D9D9DB;
+	opacity: 0.8;
+	z-index: 1;
+	margin-bottom: 5%;
+	box-shadow: 0px 0px 15px white;
+}
+.table .title{
+	height: 43px;
+	/*position: relative;*/
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.table .title span{
+	display: block;
+	padding-left:30px;
+	padding-top:5px;
+	font-weight: bolder;
+	font-size: 24px;
+}
+
+.table .tr1{
+	width: 100%;
+	/*position: relative;*/
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top: 2px #4A4A4C solid;
+	padding-bottom:5%; 
+}
+.table .tr1 span{
+	display: block;
+	padding-left:10px;
+	padding-top:5px;
+	font-size: 18px;
+	margin-right: 10px;
+	text-align: justify;
+}
+@media screen and (max-width:980px)
+ {
+ 	.table .tr1 span{font-size:16px;}
+ }
+ @media screen and (max-width:580px)
+ {
+ .table .tr1 span{font-size:14px;}
+ }
+ @media screen and (max-width:380px)
+ {
+ .table .tr1 span{font-size:12px;}
+ }
+.table .tr1 span p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4A4A4C;
+}
+.table .tr1 .text-pic{
+	display: inline-block;
+}
+.table .tr1 .span1{
+	top: 0;
+	padding-top:0; 
+	width: 50%;
+}
+.table .tr1 .span2{
+	width: 40%;
+	margin-left: 3%;
+	margin-top: 5px;
+}
+.table .tr1 .span2 img{
+	display: block;
+	width: 100%;
+	top: 0;
+}
+.table .tr1 .span2 font{
+	font-size: 16px;
+	font-style: italic;
+}
+.table .tr1 .line{
+	display: block;
+	border:#4A4A4C 1px dotted;
+	height: 0;
+	padding: 0;
+	width: 90%;
+	margin-left: 1%;
+	margin-top: 10px;
+	opacity: 0.7;
+}
+.table .tr1 .pic-group{
+	display: block;
+	width: 70%;
+	margin-left: 15%;
+}

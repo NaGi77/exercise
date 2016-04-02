@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<title>NMusic APP</title>
+
+<link href="css/appdownload.css" rel="stylesheet" type="text/css" />
+<link rel="Shortcut Icon" href="http://selfintro-xinchen.stor.sinaapp.com/logo2.ico">
+
+</head>
+<body>
+	<div class="bg" id="bg"><img src="http://selfintro-xinchen.stor.sinaapp.com/xk1.jpg"></div>
+
+		<script type="text/javascript">
+			var winWidth = document.body.scrollWidth;     // 取窗口宽度
+			var winHeight = document.body.scrollHeight;    // 取窗口高度
+
+			var myDiv = document.getElementById('bg');   // 动态创建 div
+			myDiv.style.width = winWidth + 'px';        // 设置宽度
+			myDiv.style.height = winHeight + 'px';      // 设置高度
+		</script>
+
+	<!--<div class="bg1"></div>-->
+	<div class="box">
+		<div class="title"><p>N-Music APP 下载</p></div>
+		<div class="logo"><img src="http://selfintro-xinchen.stor.sinaapp.com/logo.jpg" id="xc"><p>
+			&nbsp;</br>&nbsp;</br>快快点击下载吧！</br>快快点击下载吧！</br>快快点击下载吧！</br>重要的话说三遍！</p>
+		</div>
+
+			<script type="text/javascript">//让图片的宽高相等
+				function changeWH(){
+	    			var id="xc";
+	   				var w=0;
+	    			var h=0;
+	   				real= document.getElementById(id).width || document.getElementById(id).style.width || document.getElementById(id).offsetWidth;
+	    			w=parseInt(real);
+	   				h=parseInt(real);
+				}
+				changeWH();
+			</script>
+
+		<!--<div class="text"><p>快快点击下载吧！</br>快快点击下载吧！</br>快快点击下载吧！</br>重要的话说三遍！！！</p></div>-->
+		<div class="text"><p>温馨提示：本网页请在浏览器中打开！</p></div>
+		<div class="button"><!--<a href="http://selfintro-xinchen.stor.sinaapp.com/APP%2FNMusic_APP.apk " target="_blank">点击下载</a>-->
+
+			<button onclick="javascript:window.location.href='http://selfintro-xinchen.stor.sinaapp.com/APP%2FNMusic_APP.apk';" >		
+				<img src="http://selfintro-xinchen.stor.sinaapp.com/android.png">&nbsp;Android端下载
+		</button> 
+
+		</div>
+	</div>
+</body>
+</html>
