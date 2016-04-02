@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+ 	<title>物理实验计算器</title>
+ 	<link rel="stylesheet" type="text/css" href="css1.css">
+ 	<script type="text/javascript" src="action.js"></script>
+ 	<style type="text/css">
+ 	body{
+	font-family: "宋体";}
+ 	</style>
+</head>
+<body>
+	<div class="biggest"><form >
+	<table class="table1" align="center" cellspacing="0" >
+		<tr>
+			<td class="table2">
+				<table align="center" class="table3"  >
+					<tr class="table3-1">
+						<td colspan="2" ><table class="table3-1-1" >
+							<tr height="30px"><td colspan="3">一、不确定度计算器</td></tr>
+							<tr >
+								<td width="42%" rowspan="2" >
+									<table  class="table3-1-3" ><tr><td align="right" width="40%" ><font size='2'>请输入数据总数：</font></td>
+										<td><input type="text" value="数据总数..." class="input1" id="sum-one" onfocus="javascript:this.value='';"></td></tr>
+										<tr><td align="right"><font size=2>Tp:</font></td><td><input type="text" value="Tp..." id="Tp" class="input1" onfocus="javascript:this.value='';"></td></tr>
+										<tr><td align="right"><font size=2>Kp:</font></td><td><input type="text" value="Kp..." id="Kp" class="input1" onfocus="javascript:this.value='';"></td></tr>
+										<tr><td align="right"><font size=2>C:&radic;</font></td><td><input type="text" value="C..." id="C" class="input1" onfocus="javascript:this.value='';"></td></tr>
+										<tr><td align="right"><font size=2>&Delta;仪:</font></td><td><input type="text" value="..." id="delta" class="input1" onfocus="javascript:this.value='';"></td></tr></table>
+								</td>
+								<td width="20%">
+									<div class="box3"><input type="button" value="开&nbsp;始" class="input2" onclick="sumbqdd();"></div>
+									<div class="box3"><input type="reset" value="重&nbsp;置" class="input2"></div>
+								</td>
+								<td>
+									<table class="table3-1-1"><tr><td align="right">平均值：</td><td><input type="text" value="平均值..." id="average" class="input4"></td></tr>
+									<tr><td align="right">Ua:</td><td><input type="text" value="Ua..." id="Ua" class="input4"></td></tr>
+								<tr><td align="right">Ub:</td><td><input type="text" value="Ub..." id="Ub" class="input4"></td></tr>
+							<tr><td align="right">Ur:</td><td><input type="text" value="Ur..." id="Ur" class="input4"></td></tr></table>
+								</td>
+							</tr>
+							<tr><td colspan="2"><div class="td2"><font size=2>【注：输入左边一列参数，点击开始，然后依次输入所有数据，完成后自动计算出右边一列的结果。C的值只需输入3or6or9，系统自动开根号。计算得到的数值均保留8位小数】</font></div></td></tr>
+						</table></td>
+					</tr>
+					<tr cellspacing="10px">
+						<td colspan="2" class="table3-2" align="center">
+							<div class="box5"><div class="box2">附1：T与P、r的关系</div><table class="table3-1-2" cellspacing="5" ><font size=2>
+							<tr><td>P/Tp/N</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>15</td><td>20</td><td>&infin;</td></tr>
+							<tr><td>0.68</td><td>1.32</td><td>1.20</td><td>1.14</td><td>1.11</td><td>1.09</td><td>1.08</td><td>1.07</td><td>1.06</td><td>1.04</td><td>1.03</td><td>1</td></tr>
+							<tr><td>0.90</td><td>2.92</td><td>2.35</td><td>2.13</td><td>2.02</td><td>1.94</td><td>1.86</td><td>1.83</td><td>1.75</td><td>1.73</td><td>1.71</td><td>1.65</td></tr>
+							<tr><td>0.95</td><td>4.30</td><td>3.18</td><td>2.78</td><td>2.57</td><td>2.45</td><td>2.37</td><td>2.31</td><td>2.26</td><td>2.15</td><td>2.09</td><td>1.96</td></tr>
+							<tr><td>0.99</td><td>9.93</td><td>5.84</td><td>4.60</td><td>4.03</td><td>3.71</td><td>3.0</td><td>3.36</td><td>3.25</td><td>2.98</td><td>2.86</td><td>2.58</td></tr></font>
+						</table></div></td>
+					</tr>
+					<tr>
+					<td width="60%" align="center"><div class="box4" ><div class="box2">附2：P与Kp的关系</div><table class="table3-1-2" ><font size=2>
+						<tr><td>P</td><td>0.500</td><td>0.683</td><td>0.900</td><td>0.950</td><td>0.955</td><td>0.990</td><td>0.997</td></tr>
+						<tr><td>Kp</td><td>0.675</td><td>1</td><td>1.65</td><td>1.96</td><td>2</td><td>2.58</td><td>3</td></tr></font>
+					</table></td>
+						<td width="40%" align="center"><div class="box1"><div class="box2">附3：C的取值</div><table class="table3-1-2" ><tr><td>&radic;3(均匀分布)</td><td>&radic;6(三角分布)</td></tr><tr><td>&radic;9(正态分布)</td></tr></table></td>
+					</tr>
+				</table>
+			</td>
+			<td ><div class="line"></div></td>
+			<td><table class="table3-1-1"  cellpadding="10px">
+				<tr><td>二、回归方程计算器</td></tr>
+				<tr><td>请输入数据组总数：<input type="text" class="input6" id="sum-two" onfocus="javascript:this.value='';"></td></tr>
+				<tr><td>&nbsp;&nbsp;<input type="button" class="input3" value="开&nbsp;始" onclick="hgfc()"></td></tr>
+				<tr><td>回归方程：y=&nbsp;<input type="text" class="input5" id="numberb">&nbsp;+&nbsp;<input type="text" class="input5" id="numberk">x</td></tr>
+				<tr><td>相关系数：r=&nbsp;<input type="text" class="input5" id="r"></td></tr>
+				<tr><td>斜率标准差:Sb=<input type="text" class="input5" id="Sb"></td></tr>
+				<tr><td>y截距标准差:Sa=<input type="text" class="input5" id="Sa"></td></tr>
+				<tr><td><font size=2>（注：输入数据组（x，y）总数，点击开始，依提示输入所有数据，完成后自动计算出所有相关参数。计算得到的数值均保留8位小数）</font></td></tr>
+			</table></td>
+		</tr>
+	</table>
+ 	</div></form>
+</body>
+</html>
