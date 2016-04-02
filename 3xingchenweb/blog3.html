@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<link href="css/css-blog-text.css" rel="stylesheet" type="text/css" />
+</head>
+	<div class="tr1" id="tr1">
+		<span class="bg-span"><div class="span-title">3D可视化蓝牙音箱功能描述</div ></span>
+	</div>
+	<div class="from">from：曹为主</div>
+	<div class="text"><span>
+1. 产品自身固化一套算法及主题</br>
+2. 产品采用Bluetooth4.0与手机APP相连(修改协议 使得手机自带蓝牙不能连接)</br>
+3. 手机APP功能描述：</br>
+① 自带一个本地音乐播放器，搜索本地mp3等文件，更新添加到列表之中</br>
+② 开发自带音乐播放器原因是进行频谱分析，获得音乐高潮低潮时间节点信息</br>
+③ 主题下载部分：APP与官网相连，由于主题目前较少，不进行分类；一套主题拟定	   包含1-2种开机动画和10种左右音乐动画。主题描述按照开机与音乐两部分进行预  
+   览描述。(如时间足够 加入用户打分评论部分)</br>
+④ 每一种主题对应一个hex文件，每次下载刷新STM32程序，音乐动画的选择与持续
+   时间由APP给出音乐节点进行控制。</br>
+⑤ APP包括相应设置，包括例如：开关灯——当作纯蓝牙音箱使用；灯光亮度调节(白
+  天夜晚模式)，发出控制信号给STM32 进行调节。当然需要包括音乐播放器的基本	  功能，上下曲 暂停 音量调节 歌词显示等，其他功能可自行发挥。</br>
+4. 官网端功能描述：</br>
+① 接收主题hex文件的上传与提供下载</br>
+② 主题视频或者图像描述资源的上传</br>
+③ 我们团队以及产品的介绍</br>
+④ 以上为基本功能，可自行发挥</br>
+5. 蓝牙部分描述：(蓝牙做无线串口用)</br>
+① 按需设计出自用的蓝牙RF小板，小板功能与STM32控制相联系</br>
+6. STM32控制部分：</br>
+① 摸清底板控制原理(现有文件)结合蓝牙功能与APP发送控制信号进行电路调节控制</br>
+② 统一音乐时间节点与相关信息的产生</br>
+7.动画部分：</br>
+① 为前期APP主题下载部分提供一定的资源</br>
+② 区分开机动画与音乐动画</br>
+③ 注意音乐动画的选择与运行要和APP传入的时间节点信号的配合</br>
+
+
+
+</span></div>
+	<div class="time">2015-10-25 </div>
+	<div class="back"><a href="blog-news.html" target="blog-news" >back</a></div>
+</frame>
+</html>

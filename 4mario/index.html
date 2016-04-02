@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<title>练习</title>
+<!--引入css-->
+<link rel="stylesheet" type="text/css" href="mario.css">
+</head>
+<body>
+	<script type="text/javascript">
+		//设计Mario类
+		function Mario(){
+			this.x=0;
+			this.y=0;
+			//移动 0->上 1->右 2->下 3->左
+			this.move=function(direct){
+				switch(direct){
+					case 0:
+						//上移动；
+						var mymario=document.getElementById('mymario');
+						var top=mymario.style.top;
+
+						var div=document.getElementById('bgdiv');
+						var divtop=div.style.top;
+
+						top=parseInt(top.substr(0,top.length-2));
+
+						if (top==divtop) {
+							break;
+						};
+
+						mymario.style.top=(top-10)+'px';
+						break;
+					case 1:
+						//window.alert("右移动");
+						//这里为了改变img的left和top，我们需要先得到img的元素
+						var mymario=document.getElementById('mymario');
+						var left=mymario.style.left;
+						//window.alert(mymario.style.top);
+
+						var div=document.getElementById('bgdiv');
+						var divright=div.offsetWidth-50+div.style.left;
+
+						left=parseInt(left.substr(0,left.length-2));
+
+						if (left==divright) {
+							break;
+						};
+						mymario.style.left=(left+10)+'px';
+						break;
+					case 2:
+						//下移动；
+						var mymario=document.getElementById('mymario');
+						var top=mymario.style.top;
+
+						var div=document.getElementById('bgdiv');
+						var divbottom=div.offsetHeight-100+div.style.top;
+
+						top=parseInt(top.substr(0,top.length-2));
+
+						if (top==divbottom) {
+							break;
+						};
+
+						mymario.style.top=(top+10)+'px';
+						break;
+					 case 3:
+						//左移动；
+						var mymario=document.getElementById('mymario');
+						var left=mymario.style.left;
+
+						var div=document.getElementById('bgdiv');
+						var divleft=div.style.left;
+
+						left=parseInt(left.substr(0,left.length-2));
+
+						if (left==divleft) {
+							break;
+						};
+
+						mymario.style.left=(left-10)+'px';
+						break;
+				}
+			}
+
+		}
+		//创建Mario对象
+		var mario=new Mario();
+		//全局函数
+		function Mariomove(direct){
+			switch(direct){
+				case 0:
+					mario.move(direct);
+					break;
+				case 1:
+					mario.move(direct);
+					break;
+				case 2:
+					mario.move(direct);
+					break;
+				case 3:
+					mario.move(direct);
+					break;
+			}
+		}
+		//键盘控制img
+		document.onkeydown=function(event){
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode==38){
+				 	Mariomove(0);
+			}
+			if(e && e.keyCode==39){
+				 	Mariomove(1);
+			}
+			if(e && e.keyCode==40){
+				 	Mariomove(2);
+			}
+			if(e && e.keyCode==37){
+				 	Mariomove(3);
+			}
+		}
+
+
+
+
+
+//乱跑的蘑菇
+		//定方向
+		directX=1;//x轴的方向
+		directY=1;//y轴的方向
+		mgX=parseInt(600*Math.random());//蘑菇的坐标
+		mgY=parseInt(400*Math.random());
+		function mgMove(){
+			var mgdiv=document.getElementById("mgdiv");
+			mgX+=directX;
+			mgY+=directY;
+
+		var mymario=document.getElementById('mymario');
+			var left1=mymario.style.left;
+			var top1=mymario.style.top;
+			left1=parseInt(left1.substr(0,left1.length-2));
+			top1=parseInt(top1.substr(0,top1.length-2));
+			if ((left1==mgX||left1==mgX+1||left1==mgX+2||left1==mgX+3||left1==mgX-1||left1==mgX-2||left1==mgX-3||left1==mgX+4||left1==mgX+5||left1==mgX+6||left1==mgX-4||left1==mgX-5||left1==mgX-6||left1==mgX+11||left1==mgX+12||left1==mgX+13||left1==mgX-11||left1==mgX-12||left1==mgX-13||left1==mgX+10||left1==mgX+20||left1==mgX+23||left1==mgX-21||left1==mgX-22||left1==mgX-23)&&(top1==mgY||top1==mgY+1||top1==mgY+2||top1==mgY+3||top1==mgY-1||top1==mgY-2||top1==mgY-3||top1==mgY+4||top1==mgY+5||top1==mgY+6||top1==mgY-4||top1==mgY-5||top1==mgY-6||top1==mgY+10||top1==mgY+12||top1==mgY+13||top1==mgY-11||top1==mgY-12||top1==mgY-13||top1==mgY+21||top1==mgY+22||top1==mgY+23||top1==mgY-21||top1==mgY-22||top1==mgY-23)) {
+				window.alert("win");
+				location.reload();
+			};
+
+
+
+			//修改div的left，top
+			mgdiv.style.top=mgY+"px";
+			mgdiv.style.left=mgX+'px';
+
+			//判断什么时候转变方向
+			//x方向
+			if (mgX+mgdiv.offsetWidth>=bgdiv.offsetWidth) {
+				directX=-directX;
+			};
+			if (mgX<=bgdiv.style.top) {
+				directX=-directX;
+			};
+			//y
+			if (mgY+mgdiv.offsetHeight>=bgdiv.offsetHeight) {
+				directY=-directY;
+			};
+			if (mgY<=bgdiv.style.left) {
+				directY=-directY;
+			};
+
+
+
+
+		}		
+
+		setInterval('mgMove()',10);
+
+	</script>
+	<div class="gamediv" id="bgdiv">
+		<div style="position: absolute;" id="mgdiv">
+			<img src="pic/mg1.png" id="mg1">	
+		</div>
+		<!--<img  style="width:50px;left:150px;top:100px;position: absolute;" src="pic/mg2.png">
+		<img  style="width:50px;left:200px;top:100px;position: absolute;" src="pic/mg3.png"> 	-->
+		<img id="mymario" style="width:50px;height:100px;left:30px;top:50px;position: absolute;" src="pic/mario.png">	
+	 </div>
+<script>
+		//mario追蘑菇
+		var mymario=document.getElementById('mymario');
+		var mgdiv=document.getElementById("mgdiv");
+		var left1=mymario.style.left;
+		left1=parseInt(left1.substr(0,left1.length-2));
+
+		var top1=mymario.style.top;
+		top1=parseInt(top1.substr(0,top1.length-2));
+
+		var left2=mgdiv.style.left;
+		var top2=mgdiv.style.top;
+		if ((left1==left2)&&(top1==top2)) {
+			window.alert("win");
+		};
+	
+</script>
+
+	 <table class="controlcenter">
+	 	<tr><td colspan="3"></td></tr>
+	 	<tr><td></td><td><input type="button" value="↑ ↑" onclick="Mariomove(0)"></td><td></td></tr>
+	 	<tr><td><input type="button" value="←←" onclick="Mariomove(3)"></td><td></td><td><input type="button" value="→→" onclick="Mariomove(1)"></td></tr>
+	 	<tr><td></td><td><input type="button" value="↓ ↓" onclick="Mariomove(2)"></td><td></td></tr>
+	 </table>
+</body>
+</html>

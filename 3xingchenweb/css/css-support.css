@@ -1,0 +1,18 @@
+body{
+	background: black;
+}
+.pic{
+	height: 90%;
+	width: 90%;
+	top: 13%;
+	position: absolute;
+	margin-bottom: 10%;
+	left: 5%;
+	box-shadow: 0px 0px 10px white;
+	border-radius: 10px;
+}
+.pic img{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}

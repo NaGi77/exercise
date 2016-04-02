@@ -1,0 +1,21 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;padding:0;
+}
+.gamediv{
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: 800px;
+	height: 600px;
+	background:pink; 
+}
+.controlcenter{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	top:50%;
+	right: 20%;
+}
+.controlcenter input{
+	width: 30px;
+}
