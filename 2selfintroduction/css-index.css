@@ -1,0 +1,285 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    height:100%;
+    width: 100%;
+}
+.bg2{
+	height: 150%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+.top{
+	height:15%;
+    width:85%;
+    margin-top:35px;
+    text-align:center;
+    border-radius: 20px;
+    margin-left: 7.5%;
+}
+.bg1{
+   height: 100%;
+   width: 100%;
+   top:35px;
+   border-radius: 20px;
+}
+.foot{
+	height: 100px;
+	background: lightyellow;
+    width:85%;
+    margin-bottom:2%;
+    text-align:center;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.button{
+	background:#CCE8CF;
+	height: 40px;
+	width: 85%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 3px;
+}
+.button1{
+	/*background: lightgrey;*/
+	text-align: center;
+	display: inline-block;
+	line-height: 100%;
+	width: 23%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.button2{
+	/*background: lightgreen;*/
+	text-align: center;
+	display: inline-block;
+	line-height: 100%;
+	width: 23%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.button3{
+	/*background: yellow;*/
+	text-align: center;
+	display: inline-block;
+	line-height: 100%;
+	width: 23%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.button4{
+	/*background: lightyellow;*/
+	text-align: center;
+	display: inline-block;
+	line-height: 100%;
+	width: 23%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.tp{
+	height: 100%;	
+	float: left;
+	margin-left: 15%;
+}
+.text1{
+	float: right;
+	margin-right: 30%;
+	margin-top: 5%;
+	background: #056D1D;
+	height: 65%;
+	width: 30%;
+	padding-top: 3%;
+	margin-top: 2%;
+	border-radius: 10px;
+	color: #AAF7BC;
+	font-weight: bold;
+}
+.text1:hover{
+	font-weight: bolder;
+	font-size: +5;
+}
+.under{
+	/*height:1600px;
+	width: 1209px;*/
+	width:85%;
+	height:100%;
+	margin-left: 7.5%;
+	margin-right: 7.5%; 
+}
+.right{
+	float: right;
+	background:  #056D1D;
+	height: 100%;
+	width: 25%;
+	margin-right: 0%;
+	text-align: center;
+	border-radius: 20px;
+
+}
+.table-right{
+	/*background: purple;*/
+	width: 95%;
+	height: 99%;
+	/*border-width: 2px;
+	border-color: black;
+	border-style: solid;*/
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	overflow:auto;
+}
+.td1{
+	background: #CCE8CF;
+	border-radius: 20px;
+	padding: 5%;
+	height: 180px;
+	margin: 8% 5% 20px 5%; 
+	font-family: "楷体";
+	font-size: 20px;
+	font-weight: bold;
+	color: #246D31;
+	text-align: left;
+	overflow:auto;
+}
+#text2{
+	text-align: left;
+	font-size: 20px;
+	font-family: "楷体";
+	font-weight: bold;
+	padding-left: 5%;
+}
+.text4{
+	border-bottom:dashed #246D31 1px;
+}
+#text3{
+	text-align: center;
+	margin-bottom: 8px;	
+	font-family: "楷体";
+	font-size: 25px;
+	font-weight: bolder;
+}
+.td2{
+	background: #CCE8CF;
+	border-radius: 20px;
+	padding: 5%;
+	height: 220px;
+	margin: 8% 5% 20px 5%;
+	font-family: "楷体";
+	font-size: 20px;
+	font-weight: bold;
+	color: #246D31;
+	text-align: left;
+	overflow:auto; 
+}
+.mail{
+	border-radius: 5px;
+	background: #246D31;
+	color: #CCE8CF;
+	float: right;
+}
+.td3{
+	background: #CCE8CF;
+	border-radius: 20px;
+	padding: 5%;
+	height: 36%;
+	margin: 8% 5% 20px 5%;
+	font-family: "楷体";
+	font-size: 25px;
+	font-weight: bold;
+	color: #246D31;
+	overflow:auto;
+}
+
+.left{
+	background: #056D1D;
+	float: left;
+	height: 100%;
+	width: 74%;
+	border-radius: 20px;
+}
+.leftbg{
+	overflow:auto;
+	width: 95%;
+	height: 95%;
+	margin:2.5%;
+	background: #CCE8CF;
+	border-radius: 20px;
+}
+.leftstyle{
+	width: 100%;
+	height: 1000px;
+	border-width: 0px;
+}
+
+
+.float1{
+	position: fixed;
+	top: 5%;
+	width: 5%;
+	height: 100%;
+}
+.float2{
+	position: fixed;
+	top: 5%;
+	width:5%;
+	height: 100%;
+	right: 0;
+}
+.tp3{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.url{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 15%;
+	left: 0;
+	padding-top:10%; 
+
+}
+.href{
+	font-size: 20px;
+	font-family: "楷体";
+	color: #246D31;
+}
+.href1{
+	position: absolute;
+	left: 33%;
+	top: 33%;
+}
+.href2{
+	position: absolute;
+	left: 28%;
+	top: 33%;
+}
+.footpng{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+/*
+
+.all{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.tp2{
+	width: 1400px;
+	height: 2000px;
+}
+*/

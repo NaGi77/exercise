@@ -1,0 +1,226 @@
+/*这里是主页的css*/
+.top{
+	height: 10%;
+	width: 60%;
+	margin-left:20%;
+	margin-top: 5%;  
+}
+.head{
+	width: 85%;
+	height: 15%;
+	margin-left:7.5%;
+	margin-bottom: 5%;
+}
+.middle{
+	width: 85%;
+	height: 15%;
+	margin-left:7.5%;
+	margin-top:5%;
+	margin-bottom: 5%;
+}
+.foot{
+	width: 85%;
+	height: 15%;
+	margin-left:7.5%;
+	margin-top:5%;
+	margin-bottom: 5%;
+}
+.title-png{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+.text-welcome{
+	width: 85%;
+	height: 40px;
+	padding-bottom: 0;
+	margin-left: 7.5%;
+	margin-top: 30px;
+}
+.text-gif{
+	height: 100%;
+	width: 100%;
+}
+/*.button1{
+	width: 80px;
+	height: 30px;
+	border-radius: 15px;
+	right:5px;
+	bottom: 5px;
+	float: right;
+}
+.button1:hover{
+	width: 100px;
+	height: 40px;
+	right:5px;
+	bottom: 5px;
+	border-radius: 20px;
+}*/
+.top-png-1{
+	height: 80%;
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+/*这里是个人介绍的css*/
+.video{
+	height: 45%;
+	width: 80%;
+	margin-left: 7.5%;
+	border-radius: 20px;
+	position: relative;
+	padding: 3%;
+}
+.mp4{
+	height: 100%;
+	width: 98%;
+	margin: 1%;
+}
+.self-top{
+	height: 6%;
+	width: 60%;
+	margin-left: 20%;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.self-middle{
+	height: 30%;
+	width: 80%;
+	margin-left: 7.5%;
+	padding: 3%;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.text-middle{
+	height: 100%;
+	width: 100%;
+	border-bottom: dashed 2px #246D31;
+	font-size: 20px;
+	font-family: "楷体";
+	letter-spacing: 0;
+	color: #246D31;
+}
+.bg-middle{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.png-middle{
+	height: 100%;
+	width: 100%;
+}
+.bg-mp4{
+	height: 103%;
+	width: 100%;
+}
+.tp-top{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+.font{
+	font-size: 20px;
+	font-family: "楷体";
+	color: #246D31;
+	font-weight: bolder;
+	margin-left: 15px;
+}
+.text1{
+	width: 80%;
+	margin-left: 7.5%;
+}
+.video-box{
+	height: 90%;
+	width: 90%;
+	position:absolute;
+	top: 5%;
+	left: 5%;
+}
+
+
+/*这是团队介绍的css*/
+
+.group-middle{
+	height: 51%;
+	width: 80%;
+	margin-left: 7.5%;
+	padding: 3%;
+	padding-top: 5%;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.text-middle-group{
+	height: 230%;
+	width: 100%;
+	border-bottom: dashed 2px #246D31;
+	font-size: 20px;
+	font-family: "楷体";
+	letter-spacing: 0;
+	color: #246D31;
+}
+.font-group{
+	font-size: 20px;
+	font-family: "楷体";
+	color: #246D31;
+	font-weight: bolder;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.pic-group{
+	width: 80%;
+	height: 28%;
+	margin-left: 7.5%;
+	border-radius: 20px;
+	position: relative;
+	padding: 3%;
+}
+.picture{
+	width: 100%;
+	height: 130%;
+	margin-top: 20px;
+}
+.picture-jpg{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+.bg-middle-group{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.bg-group{
+	height: 100%;
+	width: 100%;
+}
+.jpg{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	margin-top: 4%;
+	margin-bottom: 10px;
+	height: 80%;
+	width: 95%;
+	overflow: auto;
+}
+/*这是兴趣爱好的css*/
+.text-middle-hobby{
+	height: 100%;
+	width: 100%;
+	border-bottom: dashed 2px #246D31;
+	font-size: 20px;
+	font-family: "楷体";
+	letter-spacing: 0;
+	color: #246D31;
+	padding-top: 30px;
+}
